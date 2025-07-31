@@ -2,6 +2,7 @@ const board = document.querySelector(".board");
 let currentPlayer = "X";
 let arrCases = new Array(9).fill(null);
 let gameOver = false;
+let currentPlayerSpan = document.querySelector("#current-player");
 
 displayDivs();
 
@@ -14,6 +15,7 @@ function displayDivs() {
   // Reset game state
   arrCases = new Array(9).fill(null);
   currentPlayer = "X";
+  currentPlayerSpan.innerHTML = currentPlayer;
   gameOver = false;
 }
 
@@ -31,6 +33,7 @@ function draw(index) {
 
   if (!gameOver) {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
+    currentPlayerSpan.innerHTML = currentPlayer;
   }
 }
 

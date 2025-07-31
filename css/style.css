@@ -14,9 +14,20 @@ h1 {
   font-size: 45px;
   padding: 10px;
 }
+
+h4 {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(157, 112, 0);
+  background: #fff;
+  width: 28%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto  5px;
+}
 .board {
   padding: 20px;
-  margin: 50px auto;
+  margin: 10px auto 30px;
   width: 30%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -53,5 +64,8 @@ h1 {
 @media (max-width: 940px) {
   .board {
     width: 90%;
+  }
+  h4{
+    width: 84%;
   }
 }
